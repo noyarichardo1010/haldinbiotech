@@ -1,12 +1,12 @@
 <section class="wrap_section_3">
     <div class="container">
-        <div class="wrap_title">
+        <div class="wrap_title" data-aos="fade-down">
             <h3><span class="blue">Innovative solutions</span> for <br>better fermentation, cleaner labels, <br>and sustainable applications</h3>
         </div>
     </div>
     <div class="wrap_content">
         <div class="row m-0">
-            <div class="col-12 col-md-6 left_side p-0">
+            <div class="col-12 col-md-6 left_side p-0" data-aos="fade-right">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/bio/banner2.png" alt="img">
                 <div class="content_text">
                         <h5>About</h5>
@@ -21,19 +21,19 @@
                         eum iriure dolor in hendrerit in</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 right_side p-0">
+            <div class="col-12 col-md-6 right_side p-0" data-aos="fade-left">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/bio/banner3.png" alt="img">
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <!-- <div class="col-12 col-md-6 d-none">
                     <div class="wrap_title_2">
                         <h3 class="blue">How we stand<br>
                         above the competition</h3>
                     </div>
-                </div>
-                <div class="col-12 col-md-6">
+                </div> -->
+                <div class="col-12 col-md-6 offset-md-6">
                     <div class="wrap_title">
                         <h3>We develop and produce
                             high-quality bacteria

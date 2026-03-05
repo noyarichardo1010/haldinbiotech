@@ -3,8 +3,8 @@
 
 <div class="row m-0">
 
-      <div class="col-md-6 space_innovation_left">
-        <div class="wrap_content">
+      <div class="col-12 col-md-6 space_innovation_left h-100">
+        <div class="wrap_content" data-aos="fade-up">
             <span class="label text-uppercase small">Solutions</span>
             <h2 class="title">Our Innovations</h2>
             <p>
@@ -23,7 +23,7 @@
             </p>
         </div>
 
-        <div class="wrap_img">
+        <div class="wrap_img" data-aos="fade-down">
             <img class=""
             src="<?php echo get_template_directory_uri(); ?>/images/bio/banner6.png" alt="img">
         </div>
@@ -32,7 +32,7 @@
       </div>
 
       <!-- (ACCORDION) -->
-      <div class="col-md-6 space_innovation_right">
+      <div class="col-12 col-md-6 space_innovation_right h-100">
 
         <div class="accordion accordion-flush" id="innovationAccordion">
 
@@ -41,17 +41,17 @@
 
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne">
-                        Komagataeibacter xylinus NATA2024 Powder
+                        Komagataeibacter xylinus Powder
                     </button>
                 </h2>
 
                 <div id="collapseOne"
                 class="accordion-collapse collapse show"
-                data-parent="#innovationAccordion">
+                data-bs-parent="#innovationAccordion">
                     <div class="accordion-body">
                         <img class="img-fluid"
                         src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png"
@@ -77,16 +77,16 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
                         aria-expanded="false"
                         aria-controls="collapseTwo">
-                        Aspergillus luchuensis KARU3838
+                        Aspergillus luchuensis
                     </button>
                 </h2>
                 <div id="collapseTwo"
                 class="accordion-collapse collapse"
-                data-parent="#innovationAccordion">
+                data-bs-parent="#innovationAccordion">
                     <div class="accordion-body">
                         <img class="img-fluid"
                         src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png"
@@ -97,18 +97,18 @@
 
             <!-- Item 2 -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
+                <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button"
-                        data-toggle="collapse"
-                        data-target="#collapse3"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3"
                         aria-expanded="false"
                         aria-controls="collapse3">
-                        Aspergillus oryzae KARU1838 Powder
+                        Aspergillus oryzae Powder
                     </button>
                 </h2>
                 <div id="collapse3"
                 class="accordion-collapse collapse"
-                data-parent="#innovationAccordion">
+                data-bs-parent="#innovationAccordion">
                     <div class="accordion-body">
                         <img class="img-fluid"
                         src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png"
@@ -119,7 +119,7 @@
 
         </div>
 
-        <div class="wrap_content_right">
+        <div class="wrap_content_right" data-aos="fade-up">
             <span class="label text-uppercase small">Sustainability</span>
             <h2 class="title">Higher quality, less waste</h2>
             <p>

@@ -30,9 +30,9 @@ if ($parent):
                 $bg_class = ($no == 1) ? 'green_bg_' : 'blue_bg_';
         ?>
 
-        <div class="col-12 col-md-6 mb-3 origin-item">
+        <div class="col-12 col-md-6 mb-3 origin-item" data-aos="fade-up">
 
-            <div class="wrap_card_biotech row">
+            <div class="wrap_card_biotech">
 
                 <?php if (has_post_thumbnail()): ?>
                     <img 
@@ -60,8 +60,8 @@ if ($parent):
 
                     <button 
                         class="btn btn-rounded btn-origin btn-sm"
-                        data-toggle="modal"
-                        data-target="#modal-<?php echo get_the_ID(); ?>">
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-<?php echo get_the_ID(); ?>">
                         Read More
                     </button>
 
@@ -82,7 +82,7 @@ if ($parent):
 
                     <div class="modal-header">
                         <h5 class="modal-title"><?php the_title(); ?></h5>
-                        <button type="button" class="close" data-dismiss="modal">
+                        <button type="button" class="close" data-bs-dismiss="modal">
                             <span>&times;</span>
                         </button>
                     </div>

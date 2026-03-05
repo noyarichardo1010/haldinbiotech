@@ -1,6 +1,6 @@
 <section class="wrap_contact_us">
     <div class="container">
-        <div class="row align-items-start">
+        <div class="row align-items-start" data-aos="fade-up">
 
             <div class="col-12 col-md-6">
                 <div class="section_title">
@@ -8,8 +8,8 @@
                     <h2>
                         Be part of the next big<br>
                         breakthrough in biotechnology.<br>
-                        Together, we can achieve the<br>
-                        impossible.
+                        Together, we can achieve<br>
+                        the impossible.
                     </h2>
                 </div>
             </div>
@@ -17,7 +17,7 @@
             <div class="col-12 col-md-6">
                 <h6 class="label_form">Tell us your ideas</h6>
 
-                <?php echo do_shortcode('[contact-form-7 id="9564a27" title="Contact Haldin Biotech"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="925756a" title="Contact form 1"]'); ?>
 
             </div>
 

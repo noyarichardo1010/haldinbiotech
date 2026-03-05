@@ -25,7 +25,7 @@ if ($parent) {
 
             <div class="container d-flex align-items-lg-center align-items-start">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 py-lg-0 py-5 position-relative d-flex align-items-center haldin-x-content">
-                    <div class="home-caption-container">
+                    <div class="home-caption-container" data-aos="fade-down">
 
                         <h1><?php the_title(); ?></h1>
 

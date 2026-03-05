@@ -13,7 +13,7 @@
 
 <body <?php body_class(); ?>>
 
-<header class="wrap-gps-header">
+<header class="wrap-bio-header">
 
 
 

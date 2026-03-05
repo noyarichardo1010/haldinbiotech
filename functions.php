@@ -95,18 +95,12 @@ function gps_enqueue_swiper() {
 function gps_enqueue_google_fonts() {
 
     wp_enqueue_style(
-      'google-font-roboto',
-      'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap',
+      'google-font-cabin',
+      'https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap',
       [],
       null
     );
 
-    wp_enqueue_style(
-      'google-font-bebas-neue',
-      'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap',
-      [],
-      null
-    );
   
   }
 add_action('wp_enqueue_scripts', 'gps_enqueue_google_fonts');
@@ -140,25 +134,6 @@ function allow_svg_upload($mimes) {
 add_filter('upload_mimes', 'allow_svg_upload');
 
 
-// gallery slide
-function gps_register_gallery_cpt() {
-  register_post_type('gallery_slide', [
-    'labels' => [
-      'name'          => 'Gallery',
-      'singular_name' => 'Gallery',
-    ],
-    'public'      => true,
-    'menu_icon'   => 'dashicons-format-gallery',
-    'supports'    => [
-      'title',
-      'editor',        // optional (caption)
-      'thumbnail',     // cover image
-      'page-attributes'
-    ],
-    'show_in_rest' => true,
-  ]);
-}
-add_action('init', 'gps_register_gallery_cpt');
 
 function gps_extract_images_from_blocks($blocks, &$results = []) {
   foreach ($blocks as $block) {
@@ -198,151 +173,6 @@ function gps_extract_images_from_blocks($blocks, &$results = []) {
 
 
 
-// Table Products
-
-// Tambah kolom taxonomy di CPT our-products
-add_filter('manage_our-products_posts_columns', function ($columns) {
-
-  $new_columns = [];
-
-  foreach ($columns as $key => $value) {
-      $new_columns[$key] = $value;
-
-      if ($key === 'title') {
-          $new_columns['brand_products']      = 'Brand';
-          $new_columns['product_category']    = 'Product Category';
-          $new_columns['industry']         = 'Industry';
-          $new_columns['type_products_gps']    = 'Type';
-      }
-  }
-
-  return $new_columns;
-});
-
-add_action('manage_our-products_posts_custom_column', function ($column, $post_id) {
-
-  $taxonomies = [
-      'brand_products'   => 'brand-products',
-      'product_category' => 'product-category',
-      'industry'     => 'industry',
-      'type_products_gps'=> 'type_products_gps',
-  ];
-
-  if (isset($taxonomies[$column])) {
-      $terms = get_the_terms($post_id, $taxonomies[$column]);
-
-      if (!empty($terms) && !is_wp_error($terms)) {
-          echo esc_html(implode(', ', wp_list_pluck($terms, 'name')));
-      } else {
-          echo '—';
-      }
-  }
-
-}, 10, 2);
-add_filter('manage_edit-our-products_sortable_columns', function ($columns) {
-
-  $columns['brand_products']       = 'brand-products';
-  $columns['product_category']     = 'product-category';
-  $columns['industry']              = 'industry';
-  $columns['type_products_gps']     = 'type_products_gps';
-
-  return $columns;
-});
-
-// Shortcode Gallery Slide by ID (NETRAL)
-function gps_gallery_slide_shortcode($atts) {
-
-  $atts = shortcode_atts([
-    'id' => 0,
-  ], $atts);
-
-  $post_id = intval($atts['id']);
-  if (!$post_id) return '';
-
-  $content = get_post_field('post_content', $post_id);
-  if (!$content) return '';
-
-  $blocks = parse_blocks($content);
-  $images = gps_extract_images_from_blocks($blocks);
-
-  if (empty($images)) return '';
-
-  ob_start();
-
-  foreach ($images as $item) {
-    $img = wp_get_attachment_image_src($item['id'], 'large');
-    if (!$img) continue;
-    ?>
-      <div class="swiper-slide">
-        <div class="slide-inner">
-    
-          <?php if (!empty($item['link'])) : ?>
-            <a href="<?php echo esc_url($item['link']); ?>" rel="noopener">
-              <img src="<?php echo esc_url($img[0]); ?>" alt="">
-            </a>
-          <?php else : ?>
-            <img src="<?php echo esc_url($img[0]); ?>" alt="">
-          <?php endif; ?>
-    
-          <?php if (!empty($item['caption'])) : ?>
-            <div class="slide-caption-text">
-              <?php echo esc_html($item['caption']); ?>
-            </div>
-          <?php endif; ?>
-    
-        </div>
-      </div>
-    <?php
-    }
-  
-  return ob_get_clean();
-}
-add_shortcode('gps_gallery_slide', 'gps_gallery_slide_shortcode');
-
-
-add_filter('manage_gallery_slide_posts_columns', function ($columns) {
-  $columns['gallery_shortcode'] = 'Shortcode';
-  return $columns;
-});
-
-add_action('manage_gallery_slide_posts_custom_column', function ($column, $post_id) {
-
-  if ($column === 'gallery_shortcode') {
-    echo '<code>[gps_gallery_slide id="' . esc_attr($post_id) . '"]</code>';
-  }
-
-}, 10, 2);
-
-
-
-// Handle career GPS
-
-add_action('wp_enqueue_scripts', function(){
-
-  wp_enqueue_script(
-      'career-script',
-      get_stylesheet_directory_uri() . '/js/career.js',
-      [],
-      '1.0',
-      true
-  );
-
-  wp_localize_script(
-      'career-script',
-      'career_ajax',
-      ['ajax_url' => admin_url('admin-ajax.php')]
-  );
-
-});
-
-// add_action('wp_enqueue_scripts', function() {
-//   wp_localize_script(
-//       'career-script',
-//       'career_ajax',
-//       ['ajax_url' => admin_url('admin-ajax.php')]
-//   );
-// });
-
 // remove wp footer
 function remove_footer_admin () {
   echo '';
@@ -352,18 +182,6 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 
 // Remove update notifications nag
 remove_action('admin_notices', 'update_nag', 3);
-
-// Hide plugin update count bubble
-// function remove_update_count(){
-//     global $menu;
-//     unset($menu[65]); // Plugins menu
-// }
-// add_action('admin_menu', 'remove_update_count');
-
-// // Disable automatic update emails
-// add_filter( 'auto_core_update_send_email', '__return_false' );
-// add_filter( 'auto_plugin_update_send_email', '__return_false' );
-// add_filter( 'auto_theme_update_send_email', '__return_false' );
 
 
 // Languange Switcher
@@ -427,8 +245,6 @@ function gpslands_enqueue_aos() {
 }
 add_action('wp_enqueue_scripts', 'gpslands_enqueue_aos');
 
-
-// Redirect wp-admin
 // Redirect after login
 function custom_login_redirect($redirect_to, $request, $user) {
 
