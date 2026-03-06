@@ -37,19 +37,19 @@
       <ul class="navbar-nav header-menu">
 
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $url; ?>/about">About</a>
+          <a class="nav-link" href="<?php echo home_url('/about'); ?>">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $url; ?>/solutions">Solutions</a>
+          <a class="nav-link" href="<?php echo home_url('/solutions'); ?>">Solutions</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $url; ?>/sustainability">Sustainability</a>
+          <a class="nav-link" href="<?php echo home_url('/sustainability'); ?>">Sustainability</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $url; ?>/contact">Contact</a>
+          <a class="nav-link" href="<?php echo home_url('/contact'); ?>">Contact</a>
         </li>
 
       </ul>

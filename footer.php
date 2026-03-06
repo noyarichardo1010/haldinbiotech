@@ -53,6 +53,10 @@
 
     </div>
 
+    <div class="second_footer">
+    © 2026 All Rights Reserved · haldinbiotech
+    </div>
+    
   </div>
 </footer>
 

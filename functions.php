@@ -275,3 +275,19 @@ function redirect_dashboard_to_media() {
   }
 }
 add_action('admin_init', 'redirect_dashboard_to_media');
+
+// disable notif and email wordpress
+// function remove_update_count(){
+//   global $menu;
+//   unset($menu[65]); // Plugins menu
+// }
+// add_action('admin_menu', 'remove_update_count');
+
+// // Disable automatic update emails
+// add_filter( 'auto_core_update_send_email', '__return_false' );
+// add_filter( 'auto_plugin_update_send_email', '__return_false' );
+// add_filter( 'auto_theme_update_send_email', '__return_false' );
+
+add_filter( 'wp_mail_from_name', function( $name ){
+  return get_bloginfo('name');
+});

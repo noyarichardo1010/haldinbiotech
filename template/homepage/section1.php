@@ -29,15 +29,15 @@ if ($parent) {
 
                         <h1><?php the_title(); ?></h1>
 
+                        <div class="home-caption-content">
+                            <?php the_content(); ?>
+                        </div>
+                        
                         <div class="wrap_btn_landing">
                             <a href="#" class="btn_link">
                                 Check Out Our Products
                                 <i class="fas fa-chevron-right"></i>
                             </a>
-                        </div>
-
-                        <div class="home-caption-content">
-                            <?php the_content(); ?>
                         </div>
 
                     </div>

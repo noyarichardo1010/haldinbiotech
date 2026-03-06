@@ -8,19 +8,18 @@
             <span class="label text-uppercase small">Solutions</span>
             <h2 class="title">Our Innovations</h2>
             <p>
-            Through groundbreaking research and advanced technology, we are
-            creating solutions that redefine the boundaries of biotechnology.
+            Our advantage lies in how we develop and produce our cultures.
+            Each microorganism is isolated, optimized, and scaled in-house using
+            controlled propagation systems designed for consistency and
+            performance.
             </p>
-            <p>
-            Sample of successful product story. Lorem ipsum dolor sit amet,
-            consectetuer adipiscing elit, sed diam nonummy nibh euismod
-            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-            ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
-            eum iriure dolor in hendrerit in vulputate velit esse molestie
-            consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-            accumsan et iusto odio dignissim qui blandit facilisi.
-            </p>
+            <p>From lab validation to industrial application, our process delivers
+                measurable improvements, real gains in yield, taste, effciency, and
+                stability. Backed by proprietary strains and patented methods, we
+                build fermentation solutions engineered for real production
+                environments.</p>
+
+            <h6 class="smalltitle mt-5">LEARN MORE ABOUT OUR PRODUCTS</h6>
         </div>
 
         <div class="wrap_img" data-aos="fade-down">
@@ -45,7 +44,7 @@
                         data-bs-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne">
-                        Komagataeibacter xylinus Powder
+                        Komagataeibacter Xylinus
                     </button>
                 </h2>
 
@@ -54,7 +53,7 @@
                 data-bs-parent="#innovationAccordion">
                     <div class="accordion-body">
                         <img class="img-fluid"
-                        src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png"
+                        src="<?php echo get_template_directory_uri(); ?>/images/bio/bacteria1.png"
                         alt="">
                         <div class="wrap_content_more_acc">
                             <div>
@@ -64,7 +63,8 @@
                             <div>
                                 <h5>Advantages</h5>
                                 <p>Freeze dried powder</p>
-                                <p>Koloni terstandarisasi</p>
+                                <p>Standardized colonies</p>
+                                <p>Consistent Yield</p>
                             </div>
 
                         </div>
@@ -81,7 +81,7 @@
                         data-bs-target="#collapseTwo"
                         aria-expanded="false"
                         aria-controls="collapseTwo">
-                        Aspergillus luchuensis
+                        Aspergillus Luchuensis
                     </button>
                 </h2>
                 <div id="collapseTwo"
@@ -91,6 +91,23 @@
                         <img class="img-fluid"
                         src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png"
                         alt="">
+                        <div class="wrap_content_more_acc">
+                            <div>
+                                <h5>Application</h5>
+                                <p>Shochu fermentation</p>
+                                <p>Coffee fermentation</p>
+                                <p>Cocoa fermentation</p>
+                                <p>Vanilla fermentation</p>
+                                <p>Patchouli fermentation</p>
+                            </div>
+                            <div>
+                                <h5>Advantages</h5>
+                                <p>Freeze dried powder</p>
+                                <p>Standardized colonies</p>
+                                <p>Improved sensory profiles</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +120,7 @@
                         data-bs-target="#collapse3"
                         aria-expanded="false"
                         aria-controls="collapse3">
-                        Aspergillus oryzae Powder
+                        Aspergillus Oryzae
                     </button>
                 </h2>
                 <div id="collapse3"
@@ -111,8 +128,25 @@
                 data-bs-parent="#innovationAccordion">
                     <div class="accordion-body">
                         <img class="img-fluid"
-                        src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png"
+                        src="<?php echo get_template_directory_uri(); ?>/images/bio/bacteria2.png"
                         alt="">
+                        <div class="wrap_content_more_acc">
+                            <div>
+                                <h5>Application</h5>
+                                <p>Shochu fermentation</p>
+                                <p>Cofee fermentation</p>
+                                <p>Cocoa fermentation </p>
+                                <p>Vanilla fermentation</p>
+                                <p>Patchouli fermentation</p>
+                            </div>
+                            <div>
+                                <h5>Advantages</h5>
+                                <p>Freeze dried powder</p>
+                                <p>Standardized colonies</p>
+                                <p>Improved sensory profiles</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,14 +157,14 @@
             <span class="label text-uppercase small">Sustainability</span>
             <h2 class="title">Higher quality, less waste</h2>
             <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-            tation ullamcorper suscipit lobortis nisl ut Lorem ipsum dolor sit
-            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-            ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+            Sustainability begins at the microbial level. By improving
+            fermentation effciency and yield consistency, our cultures help
+            manufacturers produce more from the same raw materials, reducing
+            waste and stabilizing output. In our own operations, byproducts such
+            as acidic nata de coco waste are processed into compost rather than
+            discharged, supporting a circular production model. Through natural
+            fermentation systems, we aim to build processes that are effcient,
+            scalable, and environmentally responsible.
             </p>
         </div>
 

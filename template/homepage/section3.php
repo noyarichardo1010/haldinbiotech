@@ -11,14 +11,16 @@
                 <div class="content_text">
                         <h5>About</h5>
                         <h3>How we started</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                        erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation ullamcorper suscipit lobortis nisl ut Lorem ipsum dolor sit
-                        amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-                        ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                        eum iriure dolor in hendrerit in</p>
+                        <h4 class="subtitle">Haldin Biotech was founded to bridge nature and industry.</h4>
+                        <p>We discover, refine, and scale microbial cultures derived from
+                            Indonesia's ecosystems, converting local biodiversity into
+                            commercial fermentation solutions. From enhancing favor profles
+                            to improving yield and process stability, our cultures are designed
+                            to perform reliably at scale.</p>
+                            <p>Backed by proprietary research and protected intellectual property,
+                                our mission is to elevate fermentation by making it more efcient,
+                                consistent, and sustainable all while unlocking greater value from
+                                local agricultural resources.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 right_side p-0" data-aos="fade-left">
