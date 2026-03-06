@@ -19,12 +19,15 @@
                 build fermentation solutions engineered for real production
                 environments.</p>
 
-            <h6 class="smalltitle mt-5">LEARN MORE ABOUT OUR PRODUCTS</h6>
+                <div class="wrap_button mt-5">
+                    <a class="smalltitle" href="<?php echo home_url('/solutions'); ?>">LEARN MORE ABOUT OUR PRODUCTS</a>
+                </div>
+            
         </div>
 
-        <div class="wrap_img" data-aos="fade-down">
-            <img class=""
-            src="<?php echo get_template_directory_uri(); ?>/images/bio/banner6.png" alt="img">
+        <div class="wrap_img">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazyload"
+            data-src="<?php echo get_template_directory_uri(); ?>/images/bio/banner6.png" alt="img">
         </div>
 
 

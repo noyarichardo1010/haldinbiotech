@@ -25,7 +25,8 @@ Text Domain: haldinbiotech
 //  @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
 
  body {
-	font-family: "Cabin",sans-serif;
+	// font-family: "Cabin",sans-serif;
+	font-family: "Helvetica",sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,7 +71,7 @@ $color-green: #cdda3e;
 			font-size: 16px;
 			  color: #1e1e1e;
 			  &:hover{
-				color: #57b0de;
+				color: #9ab62d;
 			  }
 			}
 		  }
@@ -93,7 +94,7 @@ $color-green: #cdda3e;
 html, body {
 	position: relative;
 	background-color: white;
-	font-family: "Cabin", sans-serif;
+	font-family: "Helvetica",sans-serif;
 }
 
 .transition {
@@ -293,7 +294,7 @@ html, body {
 	}
 	
 	.nav-link:hover {
-		color: #57b0de;
+		color: #9ab62d;
 	}
 }
 
@@ -311,7 +312,7 @@ html, body {
 	}
 	.wrap_card_biotech{
 		img{
-			height: 377px;
+			height: 410px;
   			// width: 100%;
 			object-fit: cover;
 		}
@@ -341,7 +342,7 @@ html, body {
 				color: #131313;
 				font-weight: 300;
 				display: -webkit-box;
-				-webkit-line-clamp: 6;
+				-webkit-line-clamp: 8;
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 			}
@@ -375,7 +376,7 @@ html, body {
 		h3{
 			text-align: center;
 			font-size: 48px;
-			font-weight: 600;
+			font-weight: 500;
 			color: #949b9f;
 			font-family: "Cabin", sans-serif;
 			span.blue{
@@ -1422,6 +1423,10 @@ html, body {
   border-radius: 50%;
   margin-right: 15px;
   font-size: 18px;
+  &:hover{
+	background: #b2d234;
+	transition: 0.3s;
+  }
 }
 
 .footer-menus {
@@ -1621,9 +1626,11 @@ html, body {
 .footer-col a{
     text-decoration:none;
     color:#1e1e1e;
-    font-size:16px;
+    font-size:14px;
     letter-spacing:1px;
 	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
 	&:hover{
 		color: #9ab62d;
 		transition: 0.2s;
@@ -1657,7 +1664,7 @@ footer{
 	h3{
 		text-align: center;
 		font-size: 48px;
-		font-weight: 600;
+		font-weight: 500;
 		color: #949b9f;
 		font-family: "Cabin", sans-serif;
 		span.blue{
@@ -1840,6 +1847,12 @@ h4.subtitle{
 	font-size: 18px;
 	font-weight: 400;
 	color: #1e1e1e;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+		transition: 0.2s;
+		color: #9ab62d;
+	}
 }
 
 .blue_t{
@@ -1873,7 +1886,12 @@ h4.subtitle{
 		right: 0;
 		width: 50%;
 		height: 100%;
-		background: url("./images/bio/img105.jpg") center/cover no-repeat;
+		// background: url("./images/bio/img105.jpg") center/cover no-repeat;
+		background: url("./images/bio/img105.jpg") no-repeat;
+		background-size: cover;
+		height: 100%;
+		background-position: bottom right;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -2066,5 +2084,115 @@ h4.subtitle{
 		width:100%;
 		height:220px;
 		object-fit:cover;
+	}
+}
+
+
+.wrap_sustain{
+	.wrap_img img {
+		width: 100%;
+		height: 650px;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+	.wrap_content_section{
+		padding-top: 70px;
+	}
+	
+
+	.wrap_sustain_grid{
+		display:grid;
+		grid-template-columns:repeat(4,1fr);
+		width:100%;
+		 .grid_item{
+			position:relative;
+			overflow:hidden;
+		}
+		
+		 img{
+			width:100%;
+			height:100%;
+			object-fit:cover;
+			display:block;
+		}
+	}
+
+	.wrap_about_sustain{
+		position: relative;
+		height: 100vh;
+
+	}
+	.bg_sustain {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: url("./images/bio/bg1.png") no-repeat;
+		background-size: contain;
+  		background-position: center left;
+	}
+
+	.wrap_section_03{
+		.card_content{
+			height: 250px;
+			padding: 50px 0px;
+			&.green_bg {
+			background-size: contain !important;
+			background-repeat: repeat !important;
+			background:
+				url('../haldinbiotech/images/bio/green_bg.png'),
+				;
+			}
+			
+			&.gray_bg {
+			background-size: contain !important;
+			background-repeat: repeat !important;
+			background:
+				url('../haldinbiotech/images/bio/gray_bg.png'),
+				;
+			}
+			&.bluelight_bg {
+				background-size: contain !important;
+				background-repeat: repeat !important;
+				background:
+					url('../haldinbiotech/images/bio/bluelight_bg3.png'),
+					;
+			}
+		}
+		h3.number{
+			font-size: 34px;
+		}
+		h3.solution{
+			font-size: 34px;
+		}
+	}
+}
+
+.space_right_40{
+	padding-right: 40px;
+}
+.space_left_40{
+	padding-left: 40px;
+}
+
+p{
+	font-weight: 300;
+	font-size: 18px;
+}
+
+
+.spacecontact{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	margin-top: 0px;
+}
+
+
+.wrap_this_about{
+	.btn-origin{
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 }

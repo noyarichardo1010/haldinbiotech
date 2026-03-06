@@ -2,7 +2,7 @@
     <div class="row m-0 align-items-stretch">
         <div class="col-12 col-md-8 p-0 d-flex">
             <div class="left_side w-100 h-100" data-aos="fade-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/bio/img371.jpg" alt="img">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/img371.jpg" alt="img">
             </div>
         </div>
         <div class="col-12 col-md-4 p-0 d-flex">

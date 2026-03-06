@@ -44,7 +44,7 @@ function gps_enqueue_assets() {
       'gps-style',
       get_stylesheet_uri(),
       ['bootstrap-css', 'fontawesome-5'],
-      '1.0'
+      filemtime(get_stylesheet_directory() . '/style.css')
     );
   
     /* Bootstrap JS */
@@ -291,3 +291,18 @@ add_action('admin_init', 'redirect_dashboard_to_media');
 add_filter( 'wp_mail_from_name', function( $name ){
   return get_bloginfo('name');
 });
+
+// lazysizes
+function theme_lazyload_scripts() {
+
+    wp_enqueue_script(
+        'lazysizes',
+        get_template_directory_uri() . '/js/lazysizes.min.js',
+        [],
+        null,
+        true
+    );
+
+}
+
+add_action('wp_enqueue_scripts', 'theme_lazyload_scripts');

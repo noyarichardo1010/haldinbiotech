@@ -6,9 +6,9 @@
     </div>
     <div class="wrap_content">
         <div class="row m-0">
-            <div class="col-12 col-md-6 left_side p-0" data-aos="fade-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/bio/banner2.png" alt="img">
-                <div class="content_text">
+            <div class="col-12 col-md-6 left_side p-0">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/banner2.png" alt="img">
+                <div class="content_text" data-aos="fade-up">
                         <h5>About</h5>
                         <h3>How we started</h3>
                         <h4 class="subtitle">Haldin Biotech was founded to bridge nature and industry.</h4>
@@ -23,8 +23,8 @@
                                 local agricultural resources.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 right_side p-0" data-aos="fade-left">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/bio/banner3.png" alt="img">
+            <div class="col-12 col-md-6 right_side p-0">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/banner3.png" alt="img">
             </div>
         </div>
         <div class="container">

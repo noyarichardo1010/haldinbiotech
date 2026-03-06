@@ -22,9 +22,9 @@
 
     <!-- Logo -->
     <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logo-header.png" 
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/logo-header.png" 
            alt="Haldin Biotech" 
-           class="img-fluid header-logo">
+           class="lazyload img-fluid header-logo">
     </a>
 
     <!-- Toggler -->

@@ -35,10 +35,10 @@ if ($parent):
             <div class="wrap_card_biotech">
 
                 <?php if (has_post_thumbnail()): ?>
-                    <img 
-                        src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium')); ?>" 
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                        data-src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium')); ?>" 
                         alt="<?php echo esc_attr(get_the_title()); ?>" 
-                        class="col-12 col-md-7 img-fluid p-0"
+                        class="lazyload col-12 col-md-7 img-fluid p-0"
                     >
                 <?php endif; ?>
 
@@ -48,50 +48,77 @@ if ($parent):
                         <?php the_title(); ?>
                     </h3>
 
+
+
                     <?php
-                    $excerpt = wp_trim_words(
-                        wp_strip_all_tags(get_the_content()),
-                        30,
-                        '...'
-                    );
+                        $content = get_the_content();
+                            $blocks = parse_blocks($content);
+
+                            $button_link = '';
+
+                            foreach ($blocks as $block) {
+
+                                if ($block['blockName'] === 'core/buttons' && !empty($block['innerBlocks'])) {
+
+                                    foreach ($block['innerBlocks'] as $inner) {
+
+                                        if ($inner['blockName'] === 'core/button') {
+
+                                            if (!empty($inner['attrs']['url'])) {
+                                                $button_link = $inner['attrs']['url'];
+                                            } elseif (!empty($inner['innerHTML'])) {
+
+                                                preg_match('/href="([^"]+)"/', $inner['innerHTML'], $matches);
+
+                                                if (!empty($matches[1])) {
+                                                    $button_link = $matches[1];
+                                                }
+
+                                            }
+
+                                            break 2;
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                    ?>
+
+                    <?php
+                        $content = get_the_content();
+                        $blocks = parse_blocks($content);
+                        
+                        $text_content = '';
+                        
+                        foreach ($blocks as $block) {
+                        
+                            if ($block['blockName'] === 'core/buttons' || $block['blockName'] === 'core/button') {
+                                continue;
+                            }
+                        
+                            if (!empty($block['innerHTML'])) {
+                                $text_content .= ' ' . wp_strip_all_tags($block['innerHTML']);
+                            }
+                        
+                        }
+                        
+                        $excerpt = wp_trim_words($text_content, 30, '...');
                     ?>
 
                     <p><?php echo esc_html($excerpt); ?></p>
 
-                    <button 
-                        class="btn btn-rounded btn-origin btn-sm"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modal-<?php echo get_the_ID(); ?>">
+                    <a 
+                        href="<?php echo esc_url($button_link); ?>"
+                        class="btn btn-rounded btn-origin btn-sm">
                         Read More
-                    </button>
+                    </a>
 
                 </div>
 
-            </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal modal_biotech fade"
-             id="modal-<?php echo get_the_ID(); ?>"
-             tabindex="-1"
-             role="dialog">
-
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title"><?php the_title(); ?></h5>
-                        <button type="button" class="close" data-bs-dismiss="modal">
-                            <span>&times;</span>
-                        </button>
-                    </div>
-
-                    <div class="modal-body">
-                        <?php the_content(); ?>
-                    </div>
-
-                </div>
             </div>
         </div>
 

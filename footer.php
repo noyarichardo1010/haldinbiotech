@@ -26,29 +26,32 @@
         <div class="footer-col">
           <h4>Solutions</h4>
           <ul>
-            <li><a href="#">Coffee Fermentation</a></li>
-            <li><a href="#">Vanilla Fermentation</a></li>
-            <li><a href="#">Cocoa Fermentation</a></li>
-            <li><a href="#">Our Products</a></li>
+            <li><a href="#">SUCCESS STORY</a></li>
+            <li><a href="#">WHY OUR PRODUCTS</a></li>
+            <li><a href="#">OUR PRODUCTS</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Sustainability</h4>
           <ul>
-            <li><a href="#">Our Purpose</a></li>
+            <li><a href="#">OUR PURPOSE</a></li>
+            <li><a href="#">OUR IMPACT</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contact</h4>
+          <ul>
+            <li><a href="#">Ask Us</a></li>
+          </ul>
         </div>
 
       </div>
 
       <!-- Logo -->
       <div class="footer-logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-header.png" alt="Haldin Biotech">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/logo-header.png" alt="Haldin Biotech">
       </div>
 
     </div>

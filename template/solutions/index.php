@@ -1,12 +1,12 @@
 <section class="wrap_solutions">
     <div class="wrap_img" data-aos="fade-down">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/bio/img104.png" alt="banner">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/img104.png" alt="banner">
     </div>
 
     <div class="wrap_content">
         <div class="container position-relative">
             <div class="row align-items-stretch">
-                <div class="col-12 col-md-6 space_top_100 space_bottom_100 d-flex flex-column">
+                <div class="col-12 col-md-6 space_top_100 space_bottom_100 space_right_40 d-flex flex-column">
                     <div class="wrap_title mb-4">
                         <span class="label text-uppercase small">SOLUTIONS</span>
                         <h2 class="title">From Indonesian Soil to<br>
@@ -132,7 +132,7 @@
                         </ul>
                     </div>
                     <div class="product_image" data-aos="fade-down">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/bio/bacteria1.png" alt="">
+                        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/bacteria1.png" alt="">
                     </div>
                 </div>
                 <div class="product_item">
@@ -156,7 +156,7 @@
                         </ul>
                     </div>
                     <div class="product_image" data-aos="fade-down">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png" alt="">
+                        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/banner5.png" alt="">
                     </div>
                 </div>
 
@@ -181,7 +181,7 @@
                         </ul>
                     </div>
                     <div class="product_image" data-aos="fade-down">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/bio/bacteria2.png" alt="">
+                        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/bacteria2.png" alt="">
                     </div>
                 </div>
             </div>
