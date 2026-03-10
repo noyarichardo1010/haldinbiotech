@@ -3,7 +3,7 @@
         <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/img104.png" alt="banner">
     </div>
 
-    <div class="wrap_content">
+    <div class="wrap_content" id="story">
         <div class="container position-relative">
             <div class="row align-items-stretch">
                 <div class="col-12 col-md-6 space_top_100 space_bottom_100 space_right_40 d-flex flex-column">
@@ -35,7 +35,7 @@
 
 
     
-    <div class="wrap_grid_solution">
+    <div class="wrap_grid_solution" id="why_our_products">
         <div class="grid_item blue_bg" data-aos="fade-up">
             <div class="grid_inner">
                 <div class="grid_left">
@@ -111,7 +111,7 @@
     </div>
 
 
-    <div class="wrap_product_solution">
+    <div class="wrap_product_solution" id="our_products">
         <div class="container">
 
             <h2 class="section_title">Our Products</h2>

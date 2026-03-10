@@ -3,7 +3,7 @@
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/images/bio/img143.png" alt="banner">
     </div>
 
-    <div class="wrap_content_section">
+    <div class="wrap_content_section" id="purpose">
         <div class="container">
             <div class="wrap_title aos-init aos-animate" data-aos="fade-down">
                 <h3>At Haldin Biotech, <br>
@@ -54,7 +54,7 @@
     </div>
 
 
-    <div class="wrap_section_03">
+    <div class="wrap_section_03" id="impact"> 
 
         <div class="card_content gray_bg">
             <div class="container">

@@ -306,3 +306,14 @@ function theme_lazyload_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'theme_lazyload_scripts');
+
+
+// show meatboxes
+add_filter('hidden_meta_boxes', 'show_all_menu_metaboxes', 10, 2);
+function show_all_menu_metaboxes($hidden, $screen) {
+
+    if ($screen->id === 'nav-menus') {
+        return []; 
+    }
+    return $hidden;
+}

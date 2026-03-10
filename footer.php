@@ -18,32 +18,32 @@
         <div class="footer-col">
           <h4>About</h4>
           <ul>
-            <li><a href="#">Who We Are</a></li>
-            <li><a href="#">What We Do</a></li>
+            <li><a href="<?php echo home_url('/about/#who_we_are'); ?>">Who We Are</a></li>
+            <li><a href="<?php echo home_url('/about/#what_we_do'); ?>">What We Do</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Solutions</h4>
           <ul>
-            <li><a href="#">SUCCESS STORY</a></li>
-            <li><a href="#">WHY OUR PRODUCTS</a></li>
-            <li><a href="#">OUR PRODUCTS</a></li>
+            <li><a href="<?php echo home_url('/solutions/#story'); ?>">SUCCESS STORY</a></li>
+            <li><a href="<?php echo home_url('/solutions/#why_our_products'); ?>">WHY OUR PRODUCTS</a></li>
+            <li><a href="<?php echo home_url('/solutions/#our_products'); ?>">OUR PRODUCTS</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Sustainability</h4>
           <ul>
-            <li><a href="#">OUR PURPOSE</a></li>
-            <li><a href="#">OUR IMPACT</a></li>
+            <li><a href="<?php echo home_url('/sustainability/#purpose'); ?>">OUR PURPOSE</a></li>
+            <li><a href="<?php echo home_url('/sustainability/#impact'); ?>">OUR IMPACT</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="#">Ask Us</a></li>
+            <li><a href="<?php echo home_url('/contact'); ?>">Ask Us</a></li>
           </ul>
         </div>
 

@@ -520,17 +520,26 @@ html, body {
 	}
 	
 	.card_section {
+		// min-height: 248px;
+		// display: block;
+		// align-items: center;
+		// justify-content: center;
+		// text-align: center;
+		// padding: 20px 30px;
+		// padding-top: 40px;
+
 		min-height: 248px;
-		display: block;
-		align-items: center;
-		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;      /* center horizontal */
+		justify-content: center;  /* center vertical */
 		text-align: center;
-		padding: 20px 30px;
-		padding-top: 40px;
+		padding: 40px 30px;
 		h1{
 			margin-bottom: 0;
   			border-bottom: 2px solid #1e1e1e;
 			font-family: "Cabin",sans-serif;
+			width: 100%;
 		}
 	}
 	

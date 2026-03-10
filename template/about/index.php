@@ -15,7 +15,7 @@
 
     <div class="content_about">
 
-        <div class="container section_top">
+        <div class="container section_top" id="who_we_are">
             <div class="row">
                 <div class="col-12 col-md-6 pe-0">
                     <div class="wrap_content_img" data-aos="fade-right">
@@ -95,7 +95,7 @@
     </div>
 
 
-    <div class="wrap_section_03 space_section">
+    <div class="wrap_section_03 space_section"  id="what_we_do">
         <div class="container">
 
             <div class="card_content" data-aos="fade-down">
